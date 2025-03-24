@@ -1,0 +1,103 @@
+# Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.userosscache
+*.userprefs
+
+# Build and Binary files
+bin/
+obj/
+out/
+[Bb]uild/
+[Ll]ogs/
+*.ilk
+*.meta
+*.pdb
+*.obj
+*.exe
+*.dll
+*.log
+*.psess
+*.vsp
+*.tlog
+*.cache
+*.pidb
+*.mdb
+
+# Rider / JetBrains IDE files
+.idea/
+*.sln.iml
+
+# Visual Studio Code specific files
+.vscode/
+.history/
+*.code-workspace
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.assets.json
+PackageRestoreFailed*.txt
+
+# .NET dependencies
+*.deps.json
+*.runtimeconfig.json
+.nuget/packages/
+**/ref/
+**/servicereferences/
+**/GeneratedMSBuildEditorConfig.editorconfig
+
+# Entity Framework Migrations
+Migrations/
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+
+# User Secrets (do not commit sensitive data)
+secrets.json
+
+# Logs and crash reports
+*.tlog
+*.log
+*.dmp
+*.err
+*.pf
+
+# Debugging / Profiling
+*.iobj
+*.ipdb
+*.vspx
+*.ncb
+*.sdf
+*.opensdf
+*.tlog
+*.VC.db
+
+# Resharper
+_ReSharper.Caches/
+*.DotSettings.user
+
+# Windows Thumbnail Cache
+Thumbs.db
+
+# Compression files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# macOS / Linux specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Git specific
+*.orig
+*.bak
