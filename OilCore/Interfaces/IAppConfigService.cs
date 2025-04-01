@@ -5,24 +5,24 @@ namespace OilCore.Interfaces;
 public interface IAppConfigService
 {
     /// <summary>
-    /// Gets the current AppConfig instance. Will initialize if needed.
+    /// Gets the current AppConfigModel instance. Will initialize if needed.
     /// </summary>
-    AppConfig GetConfig();
+    AppConfigModel GetConfig();
 
     /// <summary>
-    /// Sets and writes a new AppConfig instance.
+    /// Sets and writes a new AppConfigModel instance.
     /// </summary>
-    /// <param name="newConfig">The new AppConfig to store.</param>
-    void SetConfig(AppConfig newConfig);
+    /// <param name="newConfigModel">The new AppConfigModel to store.</param>
+    void SetConfig(AppConfigModel newConfigModel);
 
     /// <summary>
-    /// Sets the AppName value in the AppConfig.
+    /// Sets the AppName value in the AppConfigModel.
     /// </summary>
     /// <param name="appName">The application name to set.</param>
     void SetAppName(string appName);
 
     /// <summary>
-    /// Event triggered when AppConfig is updated.
+    /// Event triggered when AppConfigModel is updated.
     /// </summary>
-    event Action<AppConfig> OnConfigUpdated;
+    event Action<AppConfigModel> OnConfigUpdated;
 }

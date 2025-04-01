@@ -43,10 +43,10 @@ public static class ConfigurationService
     }
 
     private static string GetBasePath() => EnsurePath(BasePath, "Base Path is not set.");
-    public static string GetAssetsPath() => EnsurePath(AssetsPath, "Assets Path is not set.");
+    public static string GetAssetsPath() => EnsurePath(AssetsPath, "BaseAssets Path is not set.");
     public static string GetUploadPath() => EnsurePath(UploadPath, "Upload Path is not set.");
     public static string GetTempPath() => EnsurePath(TempPath, "Temp Path is not set.");
-    public static string GetAppName() => EnsurePath(AppName, "App Name is not set.");
+    public static string GetAppName() => EnsurePath(AppName, "App LocationName is not set.");
     public static string GetLogPath() => EnsurePath(LogPath, "Log Path is not set.");
     public static string GetLogFile() => EnsurePath(LogFile, "Log File is not set.");
     public static string GetDatabasePath() => EnsurePath(DatabasePath, "Database Path is not set.");
@@ -74,7 +74,7 @@ public static class ConfigurationService
             DatabaseFile = Path.Combine(DatabasePath, $"{AppName}Db.sqlite");
             TempPath = Path.Combine(BasePath, "Temp");
             UploadPath = Path.Combine(BasePath, "Uploads");
-            AssetsPath = Path.Combine(BasePath, "Assets");
+            AssetsPath = Path.Combine(BasePath, "BaseAssets");
             ConfigurationPath = Path.Combine(BasePath, "Config");
             ConfigurationFile = Path.Combine(ConfigurationPath, $"{AppName}.json");
 

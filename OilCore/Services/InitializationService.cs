@@ -6,9 +6,9 @@ namespace OilCore.Services;
 
 public class InitializationService //: IInitializationService
 {
-    private readonly IOilLoggerService _logger;
-    private readonly CoreDbContext _context;
-    public InitializationService(IOilLoggerService logger, CoreDbContext context)
+    private readonly IOilLoggerService<InitializationService> _logger;
+    private readonly OilCoreDbContext _context;
+    public InitializationService(IOilLoggerService<InitializationService> logger, OilCoreDbContext context)
     {
         _logger = logger;
         _context = context;

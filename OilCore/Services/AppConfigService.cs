@@ -6,21 +6,21 @@ namespace OilCore.Services;
 
 public class AppConfigService : IAppConfigService
 {
-    private readonly IOilLoggerService _logger;
+    private readonly IOilLoggerService<AppConfigService> _logger;
     private readonly string _configFilePath;
     private readonly Lock _lock = new();
-    private AppConfig? _appConfig;
+    private AppConfigModel? _appConfig;
     
-    public event Action<AppConfig>? OnConfigUpdated;
+    public event Action<AppConfigModel>? OnConfigUpdated;
 
-    public AppConfigService(IOilLoggerService logger, string? configFilePath = null)
+    public AppConfigService(IOilLoggerService<AppConfigService> logger, string? configFilePath = null)
     {
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         _configFilePath = configFilePath ?? ConfigurationService.GetConfigurationFile();
         _logger.LogInfo($"AppConfigService initialized with config path: {_configFilePath}");
     }
 
-    public AppConfig GetConfig()
+    public AppConfigModel GetConfig()
     {
         EnsureConfigLoaded();
         lock (_lock)
@@ -29,14 +29,14 @@ public class AppConfigService : IAppConfigService
         }
     }
 
-    public void SetConfig(AppConfig newConfig)
+    public void SetConfig(AppConfigModel newConfigModel)
     {
-        if (newConfig == null) throw new ArgumentNullException(nameof(newConfig));
+        if (newConfigModel == null) throw new ArgumentNullException(nameof(newConfigModel));
 
         lock (_lock)
         {
-            _logger.LogInfo("Updating AppConfig");
-            _appConfig = newConfig;
+            _logger.LogInfo("Updating AppConfigModel");
+            _appConfig = newConfigModel;
             WriteConfig();
             OnConfigUpdated?.Invoke(_appConfig);
         }
@@ -65,32 +65,32 @@ public class AppConfigService : IAppConfigService
         {
             if (_appConfig != null) return;
 
-            _logger.LogInfo("Attempting to load AppConfig from disk");
+            _logger.LogInfo("Attempting to load AppConfigModel from disk");
 
             try
             {
                 if (!File.Exists(_configFilePath))
                 {
-                    _logger.LogWarning("Config file not found. Creating default AppConfig.");
-                    _appConfig = new AppConfig("DefaultApp");
+                    _logger.LogWarning("Config file not found. Creating default AppConfigModel.");
+                    _appConfig = new AppConfigModel("DefaultApp");
                     WriteConfig();
                     return;
                 }
 
                 var json = File.ReadAllText(_configFilePath);
-                _appConfig = JsonSerializer.Deserialize<AppConfig>(json);
+                _appConfig = JsonSerializer.Deserialize<AppConfigModel>(json);
 
                 if (_appConfig == null)
                 {
-                    throw new InvalidOperationException("Failed to deserialize AppConfig");
+                    throw new InvalidOperationException("Failed to deserialize AppConfigModel");
                 }
 
-                _logger.LogInfo("AppConfig successfully loaded.");
+                _logger.LogInfo("AppConfigModel successfully loaded.");
             }
             catch (Exception ex)
             {
-                _logger.LogError("Failed to load AppConfig. Creating fallback config.", ex);
-                _appConfig = new AppConfig("FallbackApp");
+                _logger.LogError("Failed to load AppConfigModel. Creating fallback config.", ex);
+                _appConfig = new AppConfigModel("FallbackApp");
                 WriteConfig();
             }
         }
@@ -102,11 +102,11 @@ public class AppConfigService : IAppConfigService
         {
             var json = JsonSerializer.Serialize(_appConfig, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(_configFilePath, json);
-            _logger.LogInfo("AppConfig successfully written to disk.");
+            _logger.LogInfo("AppConfigModel successfully written to disk.");
         }
         catch (Exception ex)
         {
-            _logger.LogError("Failed to write AppConfig to disk", ex);
+            _logger.LogError("Failed to write AppConfigModel to disk", ex);
             throw;
         }
     }

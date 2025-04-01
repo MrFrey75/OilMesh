@@ -1,9 +1,11 @@
-﻿namespace OilCore.Interfaces;
+﻿using OilCore.Services;
+
+namespace OilCore.Interfaces;
 
 public class IInitializationService
 {
-    private readonly IOilLoggerService logger;
-    public IInitializationService(IOilLoggerService logger)
+    private readonly IOilLoggerService<IInitializationService> logger;
+    public IInitializationService(IOilLoggerService<IInitializationService> logger)
     {
         this.logger = logger;
         logger.LogInfo("InitializationService initialized");

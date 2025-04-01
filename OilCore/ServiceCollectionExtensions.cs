@@ -15,8 +15,7 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddOilCore(this IServiceCollection services, string applicationName)
     {
         // Centralized logger
-        services.AddSingleton<IOilLoggerService>(_ =>
-            new OilLoggerService(applicationName));
+        services.AddSingleton(typeof(IOilLoggerService<>), typeof(OilLoggerService<>));
 
         // App configuration service
         services.AddSingleton<IAppConfigService, AppConfigService>();

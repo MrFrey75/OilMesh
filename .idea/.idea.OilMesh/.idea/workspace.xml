@@ -11,54 +11,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e94dc70-23a4-44a6-bde6-ee1a27df83ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OilMesh/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OilMesh/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OilMesh/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OilMesh/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OilMesh/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OilMesh/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilAgent/App.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilAgent/App.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilAgent/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilAgent/MainWindow.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilAgent/MainWindow.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilAgent/OilAgent.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCognition/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCognition/OilCognition.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Config/DefaultAppConfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/CoreConstants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Data/CoreDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Data/Countries.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Data/USStatesAndTerritories.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Interfaces/IAppConfigService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Interfaces/IInitializationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Interfaces/IOilLoggerService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Models/AppConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Models/BaseEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Models/MachineInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/OilCore.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Services/AppConfigService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Services/ConfigurationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Services/InitializationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Services/OilLoggerService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Utilities/FileDirectoryHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilCore/Utilities/StringExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilField/OilField.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilField/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilField/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilField/Protos/greet.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilField/Services/GreeterService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilField/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilField/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilMesh.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilWorker/OilWorker.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilWorker/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilWorker/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilWorker/Worker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilWorker/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OilWorker/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Data/OilCoreDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/AddressType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/AssetStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/AssetType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/ConnectionType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/EmailType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/EnvironmentType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/MichiganCounty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/MonitorType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/PeripheralType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/PhoneType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/PrinterType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/UsStates.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/UsbType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Enumerations/WorkstationType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Address.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/AdministratorUser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Asset.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/AuxiliaryRoom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/AssetModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/BaseAsset.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/BaseAssetModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/BaseEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/CourseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/DepartmentModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/ManufacturerModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/PersonModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/RoomModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/SchoolModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Base/UserCredentialModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/BaseLookup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Classroom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Course.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Department.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/EmailAddress.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/FacultyUser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/GpsLocation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Location.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Manufacturer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/MeetingRoom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Monitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Office.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Peripheral.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Person.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/PhoneNumber.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Printer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Room.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/School.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/StudentUser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/UserCredential.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Models/Workstation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/AddressService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/AssetService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/AuthenticationService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/BaseAssetService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/CourseService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/DepartmentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/EmailAddressService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/EncryptionService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/ManufacturerService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/PersonService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/PhoneNumberService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/RoomService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/SchoolService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Services/UserCredentialService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OilCore/Utilities/AbbreviationAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OilMesh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OilMesh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Data/CoreDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Data/USStatesAndTerritories.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Interfaces/IAppConfigService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/Interfaces/IAppConfigService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Interfaces/IInitializationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/Interfaces/IInitializationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Interfaces/IOilLoggerService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Models/AppConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/Models/AppConfigModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Models/BaseEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Models/MachineInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/Models/Contact.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/OilCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/OilCore.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Services/AppConfigService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/Services/AppConfigService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Services/ConfigurationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/Services/ConfigurationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Services/InitializationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/Services/InitializationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OilCore/Services/OilLoggerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OilCore/Services/OilLoggerService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,45 +102,51 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MrFrey75"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MrFrey75&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MrFrey75/OilMesh.git",
-    "accountId": "2748a720-ff8d-4131-8c55-b9f1c6118a61"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MrFrey75/OilMesh.git&quot;,
+    &quot;accountId&quot;: &quot;2748a720-ff8d-4131-8c55-b9f1c6118a61&quot;
   }
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a6b1457cbcf17db31a383ba49ef9bcc786cf3ef77146d997eee499b27a46d/Object.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="SWEA" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ulTyWvm5NpOmMZduDGnQPwF2pD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.OilField: http">
     <configuration name="OilAgent" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -181,8 +221,19 @@
       <option name="presentableId" value="Default" />
       <updated>1730730384625</updated>
       <workItem from="1730730389914" duration="127000" />
-      <workItem from="1742822417861" duration="12545000" />
+      <workItem from="1742822417861" duration="12752000" />
+      <workItem from="1742994697308" duration="10603000" />
+      <workItem from="1743507611054" duration="15730000" />
     </task>
+    <task id="LOCAL-00001" summary="Add initial project structure and configuration files">
+      <option name="closed" value="true" />
+      <created>1742852147661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742852147661</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,5 +243,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add initial project structure and configuration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial project structure and configuration files" />
   </component>
 </project>
